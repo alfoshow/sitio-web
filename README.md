@@ -43,3 +43,8 @@ La web tratará de un tema libre que deberá tener un mínimo de 4 páginas web 
 - Se minimizará el número de accesos a ficheros css y js externos, pudiendose valorar el uso de CDNs
 - Se validará el código según la W3C. 
 - El código del proyecto se realizará a partir de un fork de este repositorio. Tendrá que haber al menos 5 commmits en 3 días diferentes y la versión de producción se colgará en el servidor infenlaces de modo que sea accesible navegando desde www.infenlaces.com
+
+
+## Modificacion
+
+-Compruebo que funciona este commit desde Windows
