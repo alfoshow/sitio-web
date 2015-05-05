@@ -1,0 +1,236 @@
+@body-bg: #fff;
+@text-color: #fff;
+
+@padding-margin:20px;
+
+//COLORES
+
+@color-circus:#4eb2ff;
+@color-desc-circus:#c22e70;
+
+@color-pacman:#000;
+@color-desc-pacman:#c6222d;
+
+@color-donkey:#ff662a;
+@color-desc-donkey:#bd1c1e;
+
+@color-gng:#9cf9c7;
+@color-desc-gng:#497cad;
+
+@color-blanco:#fff;
+
+//TIPOGRAFIAS
+
+@font-family-sans-serif:  "Source Sans Pro", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+@font-retro: "Press Start 2P", cursive;
+@font-lobster: 'Lobster', cursive;
+@font-retro2: 'Monoton', cursive,serif;
+@font-blackops: 'Black Ops One', cursive;
+
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@fuente-titulo-desc:normal 3.5rem @font-blackops;
+@fuente-desc:normal 300 18px @font-family-sans-serif;
+  
+// BARRA DE NAVEGACION
+@navbar-default-link-color: #f1db1d;
+@navbar-default-bg: rgba(0, 0, 0, 0.85);
+@navbar-default-bg2: rgba(0, 0, 0, 0);
+@navbar-height: 50px;
+
+.navbar-fixed-top {
+    padding: 10px 0;
+
+}  
+
+.navbar-brand{
+font-size: @font-size-base*2;
+//font-weight: 600;
+
+font:12px/15px @font-lobster;
+
+//font:10px/15px @font-blackops; 
+//font-family: @font-retro2;
+
+}
+
+
+
+.navbar-default{
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+}
+
+#nav-responsiva{
+    font:2rem @font-blackops;
+    color:#00c95e;
+}
+
+nav{
+
+}
+
+
+//JUMBOTRON -- CABECERA
+
+.jumbotron{
+    
+//    COVER SE USA PARA QUE OCUPE TODO EL ANCHO    
+    background: url(../img/fondo_planos.png) no-repeat bottom center scroll; 
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; 
+//    background:#efefef;
+    
+    margin: 0;
+    margin-top: 100px;
+    padding-bottom: 610px;
+    
+    padding-top: @jumbotron-padding*2;  
+ 
+    } 
+
+.jumbotron .container{
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+//FICHAS DE LOS JUEGOS
+.descripcion{
+    padding: @padding-margin;
+    margin:@padding-margin 0;
+    border-radius: @border-radius-base*2;
+    color: @color-blanco;
+}
+     
+.descripcion h2{
+    font:@fuente-titulo-desc;
+    margin-top: 0;    
+}
+
+.descripcion p{
+    font: @fuente-desc;}
+
+
+#charlie{
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAANklEQVQYV2NkwAMMOu/+Z8QlD5K8UK7MiFUBTBKkGUMBsiSGAnRJFAXYJOEKcEmCFeCTBCkAABJgHp6pnaRRAAAAAElFTkSuQmCC)repeat;
+    background-color: @color-circus;
+    padding: @padding-margin 0;   
+}
+#charlie .descripcion{
+    background-color: @color-desc-circus;}
+
+#pacman{
+    
+ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQYV2NkIBIwEqmOgQ4Kz+yw/G/icRzDJjpYjSsUqG81AJOGBAtuHJNSAAAAAElFTkSuQmCC)repeat;  
+    
+    
+//background: radial-gradient(circle, #ccb839 10%, transparent 10%),
+//  radial-gradient(circle, #ccb839 10%, black 10%) 100px 100px;
+//background-size:200px 200px;    
+    background-color: @color-pacman;
+    padding: @padding-margin 0;   
+}
+
+#pacman .descripcion{
+    background-color: @color-desc-pacman;}
+
+
+#donkey{
+background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGElEQVQIW2P8DwSMQMAABXAGhgBMJYYKAGTdCAXj1/G6AAAAAElFTkSuQmCC)repeat;      
+    background-color: @color-donkey;
+    padding: @padding-margin 0;   
+     
+    
+}
+
+
+#donkey .descripcion{
+    background-color: @color-desc-donkey;}
+
+
+#gng{
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAECAYAAABcDxXOAAAAGUlEQVQIW2NkIAIwEqGGgThFZXtr/xMyDQBd7gK0S36cnwAAAABJRU5ErkJggg==)repeat;
+    background-color: @color-gng;
+    padding: @padding-margin 0;   
+}
+#gng .descripcion{
+    background-color: @color-desc-gng;}
+
+.invader{
+    background-image: url(../img/space_invaders.gif) ;
+	transition: 0.5s ease;
+ 	-moz-transition: 0.5s ease; /* Firefox */
+ 	-webkit-transition: 0.5s ease; /* Chrome - Safari */
+ 	-o-transition: 0.5s ease; /* Opera */    
+}
+
+
+.invader-xs{
+    width: 38px;
+    height: 34px;
+    padding: 0;
+    border:0;
+//    margin:0;
+}
+
+ 
+.invader:hover{
+	transform : rotate(360deg);
+	-moz-transform : rotate(360deg); /* Firefox */
+	-webkit-transform : rotate(360deg); /* Chrome - Safari */
+	-o-transform : rotate(360deg); /* Opera */
+}
+
+
+
+// MEDIA QUERIES
+
+@media (min-width: @screen-sm-min) { 
+    .navbar-default{
+        font-size: @font-size-base*1.3;
+    }    
+    .navbar-fixed-top .navbar-brand{
+    font-size: @font-size-base*3;
+    font-weight: 900;
+        -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+    
+    }  
+    
+    
+    .jumbotron{
+       padding-top: @jumbotron-padding*4; 
+    }    
+    
+    #charlie{
+        padding: @padding-margin*5 0;   
+    }  
+    
+    #pacman{
+        padding: @padding-margin*5 0;   
+    }   
+    
+    #donkey{
+        padding: @padding-margin*5 0;   
+    }       
+    
+    .navbar-fixed-top {
+    }  
+    
+    .invader{
+        margin-left: 20px;
+        width: 53px;
+        height: 47px;
+ 
+    }    
+    
+ 
+    
+}
