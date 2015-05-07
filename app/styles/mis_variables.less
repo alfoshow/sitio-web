@@ -1,236 +1,404 @@
 @body-bg: #fff;
 @text-color: #fff;
-
 @padding-margin:20px;
 
 //COLORES
-
 @color-circus:#4eb2ff;
+
 @color-desc-circus:#c22e70;
 
 @color-pacman:#000;
+
 @color-desc-pacman:#c6222d;
 
 @color-donkey:#ff662a;
-@color-desc-donkey:#bd1c1e;
+
+//@color-desc-donkey:#bd1c1e;
+//@color-desc-donkey:#172857;
+@color-desc-donkey:#461c1c;
 
 @color-gng:#9cf9c7;
+
 @color-desc-gng:#497cad;
+@color-desc-gng:#222;
 
 @color-blanco:#fff;
 
 //TIPOGRAFIAS
+@font-family-sans-serif: "Source Sans Pro",
+Helvetica,
+Arial,
+sans-serif;
+@font-family-serif: Georgia,
+"Times New Roman",
+Times,
+serif;
+@font-retro: "Press Start 2P",
+cursive;
+@font-lobster: 'Lobster',
+cursive;
+@font-retro2: 'Monoton',
+cursive,
+serif;
+@font-blackops: 'Black Ops One',
+cursive;
+@font-family-monospace: Menlo,
+Monaco,
+Consolas,
+"Courier New",
+monospace;
+@font-family-base: @font-family-sans-serif;
 
-@font-family-sans-serif:  "Source Sans Pro", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@fuente-titulo-desc:normal 3.5rem@font-blackops;
 
-@font-retro: "Press Start 2P", cursive;
-@font-lobster: 'Lobster', cursive;
-@font-retro2: 'Monoton', cursive,serif;
-@font-blackops: 'Black Ops One', cursive;
+@fuente-desc:normal 300 18px@font-family-sans-serif;
 
-@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
 
-@fuente-titulo-desc:normal 3.5rem @font-blackops;
-@fuente-desc:normal 300 18px @font-family-sans-serif;
-  
+
+body{
+//    padding-top:75px;
+     padding-top:37px;
+    }
+
+
 // BARRA DE NAVEGACION
 @navbar-default-link-color: #f1db1d;
-@navbar-default-bg: rgba(0, 0, 0, 0.85);
-@navbar-default-bg2: rgba(0, 0, 0, 0);
+@navbar-alternative-link-color: #099cea;
+
+@navbar-default-bg: rgba(0,0,0,0);
 @navbar-height: 50px;
 
+
+
+
 .navbar-fixed-top {
-    padding: 10px 0;
-
-}  
-
-.navbar-brand{
-font-size: @font-size-base*2;
-//font-weight: 600;
-
-font:12px/15px @font-lobster;
-
-//font:10px/15px @font-blackops; 
-//font-family: @font-retro2;
-
+  padding: 10px 0;
 }
-
-
+.navbar-brand {
+font-family: @font-lobster;
+font-size: @font-size-base*3;
+font-weight: 900;    
+    
+}
+#nav-responsiva {
+  font: 2rem @font-blackops;
+    font-size: @font-size-base*1.5;   
+        transition:opacity 1s linear;
+}
 
 .navbar-default{
-    -webkit-transition: padding .3s;
-    -moz-transition: padding .3s;
-    transition: padding .3s;
-}
-
-#nav-responsiva{
-    font:2rem @font-blackops;
-    color:#00c95e;
-}
-
-nav{
-
+background-color: rgba(0,0,0,0.85);
 }
 
 
-//JUMBOTRON -- CABECERA
+ @navbar-default-toggle-border-color:transparent;
+// @navbar-default-toggle-hover-bg;
+@navbar-default-toggle-icon-bar-bg:#fff;
+    
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           #00c95e;
+@navbar-default-toggle-border-color:       #ddd;
 
-.jumbotron{
-    
-//    COVER SE USA PARA QUE OCUPE TODO EL ANCHO    
-    background: url(../img/fondo_planos.png) no-repeat bottom center scroll; 
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; 
-//    background:#efefef;
-    
-    margin: 0;
-    margin-top: 100px;
-    padding-bottom: 610px;
-    
-    padding-top: @jumbotron-padding*2;  
+
+
+#marciano-min{
+    background-color:transparent; 
+
+}
  
-    } 
-
-.jumbotron .container{
-
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 //FICHAS DE LOS JUEGOS
-.descripcion{
-    padding: @padding-margin;
-    margin:@padding-margin 0;
-    border-radius: @border-radius-base*2;
-    color: @color-blanco;
+.descripcion {
+  padding: @padding-margin;
+
+margin: @padding-margin 0;
+  border-radius: @border-radius-base*2;
+
+color: @color-blanco;
+
 }
-     
-.descripcion h2{
-    font:@fuente-titulo-desc;
-    margin-top: 0;    
+.descripcion h2 {
+  font: @fuente-titulo-desc;
+
+margin-top: 0;
 }
+.descripcion p {
+  font: @fuente-desc;}
 
-.descripcion p{
-    font: @fuente-desc;}
-
-
-#charlie{
-    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAANklEQVQYV2NkwAMMOu/+Z8QlD5K8UK7MiFUBTBKkGUMBsiSGAnRJFAXYJOEKcEmCFeCTBCkAABJgHp6pnaRRAAAAAElFTkSuQmCC)repeat;
+#charlie {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAANklEQVQYV2NkwAMMOu/+Z8QlD5K8UK7MiFUBTBKkGUMBsiSGAnRJFAXYJOEKcEmCFeCTBCkAABJgHp6pnaRRAAAAAElFTkSuQmCC)repeat;
     background-color: @color-circus;
-    padding: @padding-margin 0;   
-}
-#charlie .descripcion{
+
+padding: @padding-margin 0;
+  }
+  #charlie .descripcion {
     background-color: @color-desc-circus;}
 
-#pacman{
+#pacman {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQYV2NkIBIwEqmOgQ4Kz+yw/G/icRzDJjpYjSsUqG81AJOGBAtuHJNSAAAAAElFTkSuQmCC)repeat;
+      //background: radial-gradient(circle, #ccb839 10%, transparent 10%),
+      //  radial-gradient(circle, #ccb839 10%, black 10%) 100px 100px;
+      //background-size:200px 200px;
+      background-color: @color-pacman;
+
+padding: @padding-margin 0;
+    }
+    #pacman .descripcion {
+      background-color: @color-desc-pacman;}
+
+#donkey {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGElEQVQIW2P8DwSMQMAABXAGhgBMJYYKAGTdCAXj1/G6AAAAAElFTkSuQmCC)repeat;
+        background-color: @color-donkey;
+
+padding: @padding-margin 0;
+      }
+      #donkey .descripcion {
+        background-color: @color-desc-donkey;}
+
+#gng {
+          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAECAYAAABcDxXOAAAAGUlEQVQIW2NkIAIwEqGGgThFZXtr/xMyDQBd7gK0S36cnwAAAABJRU5ErkJggg==)repeat;
+          background-color: @color-gng;
+
+padding: @padding-margin 0;
+        }
+        #gng .descripcion {
+          background-color: @color-desc-gng;}
+
+//.invader:hover{
+//border:1px solid red;
+//background-color: none!important;
+//aquiii----------------------------------------------------------------
+//}
+
+
+
+
+.invader {
+      margin-left: 20px;
+      width: 53px;
+      height: 47px;    
     
- background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQYV2NkIBIwEqmOgQ4Kz+yw/G/icRzDJjpYjSsUqG81AJOGBAtuHJNSAAAAAElFTkSuQmCC)repeat;  
+    background-image: url(../images/space_invaders.gif);
+    transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    /* Firefox */
+    -webkit-transition: 0.5s ease;
+    /* Chrome - Safari */
+    -o-transition: 0.5s ease;
+    /* Opera */
     
-    
-//background: radial-gradient(circle, #ccb839 10%, transparent 10%),
-//  radial-gradient(circle, #ccb839 10%, black 10%) 100px 100px;
-//background-size:200px 200px;    
-    background-color: @color-pacman;
-    padding: @padding-margin 0;   
-}
 
-#pacman .descripcion{
-    background-color: @color-desc-pacman;}
-
-
-#donkey{
-background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGElEQVQIW2P8DwSMQMAABXAGhgBMJYYKAGTdCAXj1/G6AAAAAElFTkSuQmCC)repeat;      
-    background-color: @color-donkey;
-    padding: @padding-margin 0;   
-     
-    
-}
-
-
-#donkey .descripcion{
-    background-color: @color-desc-donkey;}
-
-
-#gng{
-    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAECAYAAABcDxXOAAAAGUlEQVQIW2NkIAIwEqGGgThFZXtr/xMyDQBd7gK0S36cnwAAAABJRU5ErkJggg==)repeat;
-    background-color: @color-gng;
-    padding: @padding-margin 0;   
-}
-#gng .descripcion{
-    background-color: @color-desc-gng;}
-
-.invader{
-    background-image: url(../img/space_invaders.gif) ;
-	transition: 0.5s ease;
- 	-moz-transition: 0.5s ease; /* Firefox */
- 	-webkit-transition: 0.5s ease; /* Chrome - Safari */
- 	-o-transition: 0.5s ease; /* Opera */    
-}
-
-
-.invader-xs{
+  }
+  .invader-xs {
     width: 38px;
     height: 34px;
     padding: 0;
-    border:0;
-//    margin:0;
+    border: 0;
+    //    margin:0;
+
+  }
+  .invader:hover {
+          
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+transform: rotate(360deg);
+  }
+
+  .invader-xs:hover {
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+transform: rotate(360deg);
+  }
+
+.start{
+    background-image: url(../images/boton_on.png);
+    background-position: center center;
+    background-repeat: none;
+    width: 165px;
+    height:170px;    
+    background-color: transparent;
+//    background-size: 165px 170px; 
 }
 
- 
-.invader:hover{
-	transform : rotate(360deg);
-	-moz-transform : rotate(360deg); /* Firefox */
-	-webkit-transform : rotate(360deg); /* Chrome - Safari */
-	-o-transform : rotate(360deg); /* Opera */
+.start:active{
+    background-image: url(../images/boton_off.png);
+    background-position: center center;
+    background-repeat: none;
+    width: 165px;
+    height:170px;
+    background-color: transparent;
+    border: 0;   
+//    background-size: 165px 170px;     
+}
+
+footer{
+    color:#000;
+    text-align: center;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #fed136;
+}
+
+
+
+  //CLASES EXTRAS TRANSICIONES
+  .color-trans {
+    -webkit-transition: color 500ms linear;
+    -moz-transition: color 500ms linear;
+    -ms-transition: color 500ms linear;
+    -o-transition: color 500ms linear;
+    transition: color 500ms linear;
+  }
+  .bg-trans {
+    -webkit-transition: background 500ms ease-in-out;
+    -moz-transition: background 500ms ease-in-out;
+    -ms-transition: background 500ms ease-in-out;
+    -o-transition: background 500ms ease-in-out;
+    transition: background 500ms ease-in-out;
+  }
+
+
+
+header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../images/fondo_planos.png);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .intro-text {
+    padding-top: 110px;
+    padding-bottom: 100px;
+    font-family: @font-family-sans-serif;
+
+}
+
+header .intro-text h1 {
+    margin-bottom: 25px;
+    font-size: @font-size-base*2.5;  
+    font-weight: 300;
+     text-shadow: 2px 2px #02476c;    
+
+}
+
+header .intro-text h2 {
+    font-size: @font-size-base*3;     
+    margin-bottom: 25px;
+       font-weight: 900;
+        text-shadow: 2px 2px #000;    
+
 }
 
 
 
 // MEDIA QUERIES
+  @media (max-width: @screen-sm-min) {
 
-@media (min-width: @screen-sm-min) { 
+    #charlie {
+      padding: @padding-margin*5 0;
+    }
+    #pacman {
+      padding: @padding-margin*5 0;
+    }
+    #donkey {
+      padding: @padding-margin*5 0;
+    }
+    #gng {
+      padding: @padding-margin*5 0;
+    }
+  }
+
+
+
+@media(min-width:@screen-sm-min) {
+    
+    body{
+    padding-top:100px;
+    }
+    
+    
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+      
+    }
+
+    header .intro-text h1 {
+        font-size: @font-size-base*4;
+        margin-bottom: 25px;
+    }
+
+    header .intro-text h2 {
+        font-size: @font-size-base*5;        
+        margin-bottom: 50px;
+    }
+    
+    
     .navbar-default{
-        font-size: @font-size-base*1.3;
-    }    
-    .navbar-fixed-top .navbar-brand{
-    font-size: @font-size-base*3;
-    font-weight: 900;
-        -webkit-transition: padding .3s;
-    -moz-transition: padding .3s;
-    transition: padding .3s;
-    
-    }  
-    
-    
-    .jumbotron{
-       padding-top: @jumbotron-padding*4; 
-    }    
-    
-    #charlie{
-        padding: @padding-margin*5 0;   
-    }  
-    
-    #pacman{
-        padding: @padding-margin*5 0;   
-    }   
-    
-    #donkey{
-        padding: @padding-margin*5 0;   
+    background-color: rgba(0,0,0,0);
+        
+    }
+
+    .navbar-default a{
+     color: @navbar-alternative-link-color!important;
     }       
+
+    //CLASE QUE AÑADIMOS AL HACER SCROLL    
     
-    .navbar-fixed-top {
-    }  
-    
-    .invader{
-        margin-left: 20px;
-        width: 53px;
-        height: 47px;
- 
+    .nav-scroll{
+    background-color: rgba(0,0,0,0.85);
+    color:  @navbar-default-link-color;
+    }
+
+    .nav-scroll a{
+    color: @navbar-default-link-color!important;
     }    
-    
- 
     
 }
+
+
+@media(min-width:1200px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 400px;
+    }
+
+}
+
+
+
+
+
+

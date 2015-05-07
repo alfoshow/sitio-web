@@ -18,32 +18,34 @@
 
   <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lobster|Monoton|Black+Ops+One' rel='stylesheet' type='text/css'>  
-  
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Monoton|Black+Ops+One' rel='stylesheet' type='text/css'>
+
   <!-- endbuild -->
 
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="../bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
+
 <body>
   <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top bg-trans">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-responsiva" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-        <a href="#invader" class="navbar-toggle collapsed invader-xs page-scroll"><img src="img/space_invaders.gif" class="img-responsive ">
-         </a>
-        <a class="navbar-brand" href="#"> Arcade Machine</a>
+        <a href="#invader" class="hidden navbar-toggle collapsed invader-xs page-scroll" id="marciano-min">
+          <img src="images/space_invaders.gif" class="img-responsive ">
+        </a>
+        <a class="navbar-brand color-trans" href="#"> Arcade Machine</a>
       </div>
       <div id="nav-responsiva" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -51,136 +53,167 @@
             <a href="#page-top"></a>
           </li>
           <li class="page-scroll">
-            <a href="#" class="">Máquinas</a>
+            <a href="#" class="color-trans">Máquinas</a>
           </li>
           <li class="page-scroll">
-            <a href="#" class="">Contacta</a>
+            <a href="#" class="color-trans">Contacta</a>
           </li>
-          <li class="hidden-xs">
-             <a href="#invader" class="invader page-scroll"></a>
-          </li>          
+          <li id="marciano" class="hidden hidden-xs">
+            <a href="#invader" class="invader page-scroll"></a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
+  <!--
   <div class="jumbotron">
     <div class="container text-center">
-      <h1>Hello, world!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque pariatur voluptates facilis natus culpa commodi veritatis mollitia, laboriosam iusto voluptatem consectetur quaerat a necessitatibus rerum, explicabo quas repellendus aperiam est debitis dolor dolore. Eum numquam distinctio, delectus veritatis voluptate velit, voluptates perspiciatis. Eligendi doloribus corporis inventore nisi, nihil earum, expedita?</p>
-      
-      
+      <h1>Press 1P to start!</h1>
+      <p>Esta web es un homenaje a cuatro de las mejores recreativas de los 80</p>
     </div>
   </div>
-  
-<header>
-<!--
-    <div class="container">
-         <h1>Hello, world!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam odio, aliquid iste dolorum perspiciatis tenetur sit, recusandae soluta deserunt dolore neque, unde fugiat repudiandae quisquam sapiente suscipit. Excepturi, aperiam, deleniti?</p>
-        
-    </div>
 -->
-    
-</header> 
-  
-    <section id="pacman">
+
+  <header>
+    <div class="container">
+      <div class="intro-text">
+        <h1>Pulsa 1P para comenzar</h1>
+        <h2>Descubre 4 arcades míticas</h2>
+        <a href="#start">
+          <img class="page-scroll start">
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <header>
+
+
+  </header>
+
+  <section id="pacman">
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-sm-5">
-          <img src="img/logo_pacman.png" class="img-responsive">
+          <img src="images/logo_pacman.png" class="img-responsive">
           <div class="descripcion">
-            
-              <h2>Descripción</h2>
-              <p>Circus Charlie es un juego de plataformas en donde el jugador debe guiar a la estrella circense Circus Charlie a través de seis eventos propios de un circo, incluyendo anillos de fuego, caminaje sobre una cuerda floja, caminaje sobre pelotas, montar un caballo y hacer un acto con trapecios. El juego no tiene fin, solo termina cuando Charlie pierde todas sus vidas.</p>
-            
+
+            <h2>Descripción</h2>
+            <p>Pac-Man, también llamado "Comecocos", es un videojuego arcade creado por la empresa Namco (basado supuestamente en la forma de una pizza con un trozo faltante), y distribuido por Midway Games al mercado estadounidense a principios de los años 1980. Su lanzamiento fue todo un éxito. Se convirtió en un fenómeno mundial y llegó a tener el Récord Guiness del videojuego de arcade más exitoso de todos los tiempos.</p>
+
           </div>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-          </p>
+<!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+          </p> -->
         </div>
         <div class="col-sm-7">
-          <img src="img/img_pacman.png" class="img-responsive">
+          <img src="images/img_pacman.png" class="img-responsive">
         </div>
       </div>
     </div>
-  </section>    
+  </section>
 
   <section id="charlie">
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-sm-5">
-          <img src="img/logo_circuscharlie.png" class="img-responsive">
+          <img src="images/logo_circuscharlie.png" class="img-responsive">
           <div class="descripcion">
-              <h2>Descripción</h2>
-              <p>Circus Charlie es un juego de plataformas en donde el jugador debe guiar a la estrella circense Circus Charlie a través de seis eventos propios de un circo, incluyendo anillos de fuego, caminaje sobre una cuerda floja, caminaje sobre pelotas, montar un caballo y hacer un acto con trapecios. El juego no tiene fin, solo termina cuando Charlie pierde todas sus vidas.</p>
+            <h2>Descripción</h2>
+            <p>Circus Charlie es un juego de plataformas en donde el jugador debe guiar a la estrella circense Circus Charlie a través de seis eventos propios de un circo, incluyendo anillos de fuego, caminaje sobre una cuerda floja, caminaje sobre pelotas, montar un caballo y hacer un acto con trapecios. El juego no tiene fin, solo termina cuando Charlie pierde todas sus vidas.</p>
           </div>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-          </p>
+<!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+          </p> -->
         </div>
         <div class="col-sm-7">
-          <img src="img/img_circuscharlie.png" class="img-responsive">
+          <img src="images/img_circuscharlie.png" class="img-responsive">
         </div>
-      </div>      
+      </div>
     </div>
 
   </section>
- 
-    <section id="donkey">
+
+  <section id="donkey">
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-sm-5">
-          <img src="img/logo_donkey.png" class="img-responsive">
+          <img src="images/logo_donkey.png" class="img-responsive">
           <div class="descripcion">
-              <h2>Descripción</h2>
-              <p>Circus Charlie es un juego de plataformas en donde el jugador debe guiar a la estrella circense Circus Charlie a través de seis eventos propios de un circo, incluyendo anillos de fuego, caminaje sobre una cuerda floja, caminaje sobre pelotas, montar un caballo y hacer un acto con trapecios. El juego no tiene fin, solo termina cuando Charlie pierde todas sus vidas.</p>
+            <h2>Descripción</h2>
+            <p>Donkey Kong es un personaje ficticio diseñado por el japonés Shigeru Miyamoto, para la compañía Nintendo. Es un personaje ficticio que aparece en las franquicias de videojuegos de Mario y Donkey Kong Country, un personaje popular. Ha aparecido en muchos juegos de video. Donkey Kong fue un rival de Mario cuando estuvo por primera vez en el popular juego de arcade, Donkey Kong en 1981.</p>
           </div>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-          </p>
+<!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+          </p> -->
         </div>
         <div class="col-sm-7">
-          <img src="img/img_donkey.png" class="img-responsive">
+          <img src="images/img_donkey.png" class="img-responsive">
         </div>
       </div>
     </div>
-  </section> 
-  
-    <section id="gng">
+  </section>
+
+  <section id="gng">
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-sm-5">
-          <img src="img/logo_gng.png" class="img-responsive">
+          <img src="images/logo_gng.png" class="img-responsive">
           <div class="descripcion">
-              <h2>Descripción</h2>
-              <p>Circus Charlie es un juego de plataformas en donde el jugador debe guiar a la estrella circense Circus Charlie a través de seis eventos propios de un circo, incluyendo anillos de fuego, caminaje sobre una cuerda floja, caminaje sobre pelotas, montar un caballo y hacer un acto con trapecios. El juego no tiene fin, solo termina cuando Charlie pierde todas sus vidas.</p>
+            <h2>Descripción</h2>
+            <p>Ghouls 'n Ghosts, lanzado originalmente en Japón como Daimakaimura (La aldea demoníaca del mundo), es un videojuego de plataformas del tipo Run and Gun desarrollado por Capcom y fue lanzado como Arade en Diciembre de 1988, y fue portado a numerosas plataformas. Es una secuela de Ghosts 'n Goblins y es el segundo juego de la serie del mismo nombre.</p>
           </div>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-          </p>
+<!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+          </p> -->
         </div>
         <div class="col-sm-7">
-          <img src="img/img_gng.png" class="img-responsive">
+          <img src="images/img_gng.png" class="img-responsive">
         </div>
       </div>
     </div>
-  </section> 
-  
-            
-  
+  </section>
 
 
-  <section id="about" class="container content-section text-center">
+
+
+
+  <footer id="about" class="container content-section text-center">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
         <h2>Pie de página</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tenetur exercitationem nesciunt animi. Eius vel repellendus voluptates dicta exercitationem inventore maiores soluta molestiae sint, atque adipisci, facilis numquam, dignissimos odit amet omnis distinctio! A, aut sit eum doloremque dolorem at consequatur nam temporibus ab, quae voluptates nihil consectetur. Dolorem, iste.</p>
       </div>
     </div>
-  </section>
-  
+    
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+  </footer>
+
 
 
 
@@ -213,12 +246,12 @@
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
-  
-     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-      <script src="js/arcade.js"></script>
-<!--      <script src="js/cbpAnimatedHeader.js"></script>-->
-<!--      <script src="js/classie.js"></script>-->
-       
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <!--      <script src="js/arcade.js"></script>-->
+  <!--      <script src="js/cbpAnimatedHeader.js"></script>-->
+  <!--      <script src="js/classie.js"></script>-->
+
 </body>
 
 </html>
