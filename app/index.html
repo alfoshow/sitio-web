@@ -1,258 +1,354 @@
 <!doctype html>
 <html class="no-js" lang="">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-  <title>bootstrap less2</title>
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-  <!-- build:css styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- endbower -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>
+      Alfonshow - Arcade Machine
+    </title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->   
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="../bower_components/modernizr/modernizr.js">
+  </script>
   <!-- endbuild -->
-
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-
-  <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lobster|Monoton|Black+Ops+One' rel='stylesheet' type='text/css'>
+  </head>
+  <body id="comienzo" class="palbody">
+    <!--[if lt IE 10]>
+<p class="browsehappy">
+Estas usando un 
+<strong>
+navegador desactualizado
+</strong>
+Por favor actualiza tu navegador para mejorar la experiencia.
 
-  <!-- endbuild -->
+</p>
+<![endif]-->
+              <nav  class="navbar navbar-default navbar-fixed-top bg-trans">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-responsiva" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">
+                        Toggle navigation
+                      </span>
+                      <span class="icon-bar">
+                      </span>
+                      <span class="icon-bar">
+                      </span>
+                      <span class="icon-bar">
+                      </span>
+                    </button>
+                    <a href="#invader" class="hidden navbar-toggle collapsed invader-xs page-scroll" id="marciano-min">
+                      <img src="images/space_invaders.gif" class="img-responsive ">
+                    </a>
+                    <a class="navbar-brand color-trans page-scroll" href="#comienzo">
+                      Arcade Machine
+                    </a>
+                  </div>
+                  <div id="nav-responsiva" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="hidden">
+                        <a href="#page-top">
+                        </a>
+                      </li>
+                      <li >
+                        <a href="maquinas.html" class="color-trans">
+                          Máquinas
+                        </a>
+                      </li>
+                      <li >
+                        <a href="contacta.html" class="color-trans">
+                          Contacta
+                        </a>
+                      </li>
+                      <li id="marciano" class="hidden hidden-xs animated bounce">
+                        <a href="#invader" class="invader page-scroll">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <header class="cabecera">
+                <div class="container">
+                  <div class="intro-text">
+                    <h1>
+                      Pulsa 1P para comenzar
+                    </h1>
+                    <h2>
+                      Descubre 4 arcades míticas
+                    </h2>
+                    <a href="#start" class="animated bounceIn delay3s">
+                      <img class="page-scroll start">
+                    </a>
+                  </div>
+                </div>
+              </header>
+              <section id="pacman">
+                <div class="container">
 
-  <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="../bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
-</head>
-
-<body>
-  <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-
-  <nav class="navbar navbar-default navbar-fixed-top bg-trans">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-responsiva" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="#invader" class="hidden navbar-toggle collapsed invader-xs page-scroll" id="marciano-min">
-          <img src="images/space_invaders.gif" class="img-responsive ">
-        </a>
-        <a class="navbar-brand color-trans" href="#"> Arcade Machine</a>
+                   <div class="row visible-sm">
+                    <div class="col-sm-12">
+                         <img src="images/logo_pacman.png" class="img-responsive center-block xtra-logo">
+                     </div>
+                  </div>                 
+                 
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <img src="images/logo_pacman.png" class="img-responsive hidden-sm">
+                      <div id="pacman1" class="descripcion desc-normal">
+                        <h2>
+                          Descripción
+                        </h2>
+                        <p>
+                          Pac-Man, también llamado "Comecocos", es un videojuego arcade creado por la empresa Namco (basado supuestamente en la forma de una pizza con un trozo faltante), y distribuido por Midway Games al mercado estadounidense a principios de los años 1980. Su lanzamiento fue todo un éxito. Se convirtió en un fenómeno mundial y llegó a tener el Récord Guiness del videojuego de arcade más exitoso de todos los tiempos.
+                        </p>
+                      </div>
+                      <div id="pacman2" class="descripcion desc-alt oculto">
+                        <h2>
+                          Gameplay
+                        </h2>
+                        <div class="embed-responsive embed-responsive-4by3">
+                          <img src="images/tv.png" class="img-responsive" alt="">
+                          <iframe class="embed-responsive-item" style="position:absolute;top:8%;left:6%;padding-right:31%;padding-bottom:25%;" src="https://www.youtube.com/embed/i_OjztdQ8iw?controls=0&enablejsapi=1&html5=1" frameborder="0" allowfullscreen>
+                          </iframe>
+                        </div>
+                      </div>
+                      <button id="btn_pacman" type="button" class="btn-lg btn-pacman-rojo bg-trans wow bounceIn" data-wow-delay="1.5s">
+                        <span class="glyphicon glyphicon-film" aria-hidden="true">
+                        </button>
+                      </div>
+                      <div class="col-sm-7">
+                        <img src="images/img_pacman.png" class="img-responsive wow fadeInDown" data-wow-delay="0.5s">
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section id="charlie">
+                  <div class="container">
+                   <div class="row visible-sm">
+                    <div class="col-sm-12">
+                         <img src="images/logo_circuscharlie.png" class="img-responsive center-block xtra-logo" >
+                     </div>
+                  </div>
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <img src="images/logo_circuscharlie.png" class="img-responsive hidden-sm">
+                        <div id="charlie1" class="descripcion desc-normal">
+                          <h2>
+                            Descripción
+                          </h2>
+                          <p>
+                            Circus Charlie es un juego de plataformas en donde el jugador debe guiar a la estrella circense Circus Charlie a través de seis eventos propios de un circo, incluyendo anillos de fuego, caminaje sobre una cuerda floja, caminaje sobre pelotas, montar un caballo y hacer un acto con trapecios. El juego no tiene fin, solo termina cuando Charlie pierde todas sus vidas.
+                          </p>
+                        </div>
+                        <div id="charlie2" class="descripcion desc-alt oculto">
+                          <h2>
+                            Gameplay
+                          </h2>
+                          <div class="embed-responsive embed-responsive-4by3">
+                            <img src="images/tv.png" class="img-responsive" alt="">
+                            <iframe class="embed-responsive-item" style="position:absolute;top:8%;left:6%;padding-right:31%;padding-bottom:25%;" src="https://www.youtube.com/embed/YRutFYIkl-k?controls=0&enablejsapi=1&html5=1" frameborder="0" allowfullscreen>
+                            </iframe>
+                          </div>
+                        </div>
+                        <button id="btn_charlie" type="button" class="btn-lg btn-charlie-rojo bg-trans wow bounceIn" data-wow-delay="1.5s">
+                          <span class="glyphicon glyphicon-film" aria-hidden="true">
+                          </button>
+                        </div>
+                        <div class="col-sm-7">
+                          <img src="images/img_circuscharlie.png" class="img-responsive  wow fadeInLeft" data-wow-delay="0.5s">
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section id="donkey">
+                    <div class="container">
+                   <div class="row visible-sm">
+                    <div class="col-sm-12">
+                         <img src="images/logo_donkey.png" class="center-block img-responsive xtra-logo">
+                     </div>
+                  </div> 
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <img src="images/logo_donkey.png" class="img-responsive hidden-sm">
+                          <div id="donkey1" class="descripcion desc-normal">
+                            <h2>
+                              Descripción
+                            </h2>
+                            <p>
+                              Donkey Kong es un personaje ficticio diseñado por el japonés Shigeru Miyamoto, para la compañía Nintendo. Es un personaje ficticio que aparece en las franquicias de videojuegos de Mario y Donkey Kong Country, un personaje popular. Ha aparecido en muchos juegos de video. Donkey Kong fue un rival de Mario cuando estuvo por primera vez en el popular juego de arcade, Donkey Kong en 1981.
+                            </p>
+                          </div>
+                          <div id="donkey2" class="descripcion desc-alt oculto">
+                            <h2>
+                              Gameplay
+                            </h2>
+                            <div class="embed-responsive embed-responsive-4by3">
+                              <img src="images/tv.png" class="img-responsive" alt="">
+                              <iframe class="embed-responsive-item" style="position:absolute;top:8%;left:6%;padding-right:31%;padding-bottom:25%;" src="https://www.youtube.com/embed/2P3hwfDT9nc?controls=0&enablejsapi=1&html5=1" frameborder="0" allowfullscreen>
+                              </iframe>
+                            </div>
+                          </div>
+                          <button id="btn_donkey" type="button" class="btn-lg btn-donkey-rojo bg-trans wow bounceIn" data-wow-delay="1.5s">
+                            <span class="glyphicon glyphicon-film" aria-hidden="true">
+                            </button>
+                          </div>
+                          <div class="col-sm-7">
+                            <img src="images/img_donkey.png" class="img-responsive wow fadeInRight" data-wow-delay="0.5s">
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section id="gng">
+                      <div class="container">
+                   <div class="row visible-sm">
+                    <div class="col-sm-12">
+                         <img src="images/logo_gng.png" class="img-responsive center-block xtra-logo" >
+                     </div>
+                  </div> 
+                        <div class="row">
+                          <div class="col-sm-5">
+                            <img src="images/logo_gng.png" class="img-responsive hidden-sm">
+                            <div id="gng1" class="descripcion desc-normal ">
+                              <h2>
+                                Descripción
+                              </h2>
+                              <p>
+                                Ghouls 'n Ghosts, lanzado originalmente en Japón como Daimakaimura (La aldea demoníaca del mundo), es un videojuego de plataformas del tipo Run and Gun desarrollado por Capcom y fue lanzado como Arade en Diciembre de 1988, y fue portado a numerosas plataformas. Es una secuela de Ghosts 'n Goblins y es el segundo juego de la serie del mismo nombre.
+                              </p>
+                            </div>
+                            <div id="gng2" class="descripcion desc-alt oculto">
+                              <h2>
+                                Gameplay
+                              </h2>
+                              <div class="embed-responsive embed-responsive-4by3">
+                                <img src="images/tv.png" class="img-responsive" alt="">
+                                <iframe id="videos" class="embed-responsive-item" style="position:absolute;top:8%;left:6%;padding-right:31%;padding-bottom:25%;" src="https://www.youtube.com/embed/odPJN_lZJgY?controls=0&enablejsapi=1&html5=1" frameborder="0" allowfullscreen>
+                                </iframe>
+                              </div>
+                            </div>
+                            <button id="btn_gng" type="button" class="btn-lg  btn-gng-rojo bg-trans wow bounceIn" data-wow-delay="1.5s">
+                              <span class="glyphicon glyphicon-film" aria-hidden="true">
+                              </button>
+                            </div>
+                            <div class="col-sm-7">
+                              <img src="images/img_gng.png" class="img-responsive  wow fadeInUp" data-wow-delay="0.5s">
+                            </div>
+                          </div>
+                        </div>
+                      </section>                 
+                      
+  <footer id="about" class="container-fluid content-section text-center ">
+    <div class="row">
+      <div class="col-sm-offset-2 col-sm-8 col-sm-offset-2">
+        <h2>
+          - Puedes encontrarme aquí -
+        </h2>
+        <ul class="list-inline social-buttons hidden-sm hidden-md hidden-lg">
+          <li>
+            <a href="https://github.com/alfoshow/sitio-web">
+              <i class="fa fa-github">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/alfonshow.farol">
+              <i class="fa fa-facebook">
+              </i>
+            </a>
+          </li>
+        </ul>                            
       </div>
-      <div id="nav-responsiva" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="hidden">
-            <a href="#page-top"></a>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="copyright">
+         <a href="mailto:alfonshow@gmail.com">
+          <i class="fa fa-envelope">
+          </i>
+          Alfonso López</a> 
+        </span>
+      </div>
+      <div class="col-sm-4 hidden-xs">
+        <ul class="list-inline social-buttons">
+          <li>
+            <a href="https://github.com/alfoshow/sitio-web">
+              <i class="fa fa-github">
+              </i>
+            </a>
           </li>
-          <li class="page-scroll">
-            <a href="#" class="color-trans">Máquinas</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#" class="color-trans">Contacta</a>
-          </li>
-          <li id="marciano" class="hidden hidden-xs">
-            <a href="#invader" class="invader page-scroll"></a>
+          <li>
+            <a href="https://www.facebook.com/alfonshow.farol">
+              <i class="fa fa-facebook">
+              </i>
+            </a>
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
-
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <!--
-  <div class="jumbotron">
-    <div class="container text-center">
-      <h1>Press 1P to start!</h1>
-      <p>Esta web es un homenaje a cuatro de las mejores recreativas de los 80</p>
-    </div>
-  </div>
--->
-
-  <header>
-    <div class="container">
-      <div class="intro-text">
-        <h1>Pulsa 1P para comenzar</h1>
-        <h2>Descubre 4 arcades míticas</h2>
-        <a href="#start">
-          <img class="page-scroll start">
-        </a>
-
+      <div class="col-sm-4">
+        <span class="copyright">
+          <i class="fa fa-cc">
+          </i>
+          Algunos derechos reservados  
+        </span>
       </div>
     </div>
-  </header>
-
-  <header>
-
-
-  </header>
-
-  <section id="pacman">
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-sm-5">
-          <img src="images/logo_pacman.png" class="img-responsive">
-          <div class="descripcion">
-
-            <h2>Descripción</h2>
-            <p>Pac-Man, también llamado "Comecocos", es un videojuego arcade creado por la empresa Namco (basado supuestamente en la forma de una pizza con un trozo faltante), y distribuido por Midway Games al mercado estadounidense a principios de los años 1980. Su lanzamiento fue todo un éxito. Se convirtió en un fenómeno mundial y llegó a tener el Récord Guiness del videojuego de arcade más exitoso de todos los tiempos.</p>
-
-          </div>
-<!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-          </p> -->
-        </div>
-        <div class="col-sm-7">
-          <img src="images/img_pacman.png" class="img-responsive">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="charlie">
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-sm-5">
-          <img src="images/logo_circuscharlie.png" class="img-responsive">
-          <div class="descripcion">
-            <h2>Descripción</h2>
-            <p>Circus Charlie es un juego de plataformas en donde el jugador debe guiar a la estrella circense Circus Charlie a través de seis eventos propios de un circo, incluyendo anillos de fuego, caminaje sobre una cuerda floja, caminaje sobre pelotas, montar un caballo y hacer un acto con trapecios. El juego no tiene fin, solo termina cuando Charlie pierde todas sus vidas.</p>
-          </div>
-<!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-          </p> -->
-        </div>
-        <div class="col-sm-7">
-          <img src="images/img_circuscharlie.png" class="img-responsive">
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <section id="donkey">
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-sm-5">
-          <img src="images/logo_donkey.png" class="img-responsive">
-          <div class="descripcion">
-            <h2>Descripción</h2>
-            <p>Donkey Kong es un personaje ficticio diseñado por el japonés Shigeru Miyamoto, para la compañía Nintendo. Es un personaje ficticio que aparece en las franquicias de videojuegos de Mario y Donkey Kong Country, un personaje popular. Ha aparecido en muchos juegos de video. Donkey Kong fue un rival de Mario cuando estuvo por primera vez en el popular juego de arcade, Donkey Kong en 1981.</p>
-          </div>
-<!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-          </p> -->
-        </div>
-        <div class="col-sm-7">
-          <img src="images/img_donkey.png" class="img-responsive">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="gng">
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-sm-5">
-          <img src="images/logo_gng.png" class="img-responsive">
-          <div class="descripcion">
-            <h2>Descripción</h2>
-            <p>Ghouls 'n Ghosts, lanzado originalmente en Japón como Daimakaimura (La aldea demoníaca del mundo), es un videojuego de plataformas del tipo Run and Gun desarrollado por Capcom y fue lanzado como Arade en Diciembre de 1988, y fue portado a numerosas plataformas. Es una secuela de Ghosts 'n Goblins y es el segundo juego de la serie del mismo nombre.</p>
-          </div>
-<!--           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-          </p> -->
-        </div>
-        <div class="col-sm-7">
-          <img src="images/img_gng.png" class="img-responsive">
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-  <footer id="about" class="container content-section text-center">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h2>Pie de página</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tenetur exercitationem nesciunt animi. Eius vel repellendus voluptates dicta exercitationem inventore maiores soluta molestiae sint, atque adipisci, facilis numquam, dignissimos odit amet omnis distinctio! A, aut sit eum doloremque dolorem at consequatur nam temporibus ab, quae voluptates nihil consectetur. Dolorem, iste.</p>
-      </div>
-    </div>
-    
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>  
   </footer>
+                      <!-- build:js scripts/vendor.js -->
+                      <!-- bower:js -->
+                      <script src="../bower_components/jquery/dist/jquery.js">
+                      </script>
+                      <!-- endbower -->
+                      <!-- endbuild -->
+                      <!-- build:js scripts/plugins.js -->
+                      <script src="../bower_components/bootstrap/js/affix.js">
+                      </script>
+                      <script src="../bower_components/bootstrap/js/alert.js">
+                      </script>
+                      <script src="../bower_components/bootstrap/js/dropdown.js">
+                      </script>
+                      <script src="../bower_components/bootstrap/js/tooltip.js">
+                      </script>
+                      <script src="../bower_components/bootstrap/js/modal.js">
+                      </script>
+                      <script src="../bower_components/bootstrap/js/transition.js">
+                      </script>
+                      <script src="../bower_components/bootstrap/js/button.js">
+                      </script>
+                      <script src="../bower_components/bootstrap/js/popover.js">
+                      </script>
+                      <script src="../bower_components/bootstrap/js/carousel.js">
+                      </script>
+                      <script src="../bower_components/bootstrap/js/scrollspy.js">
+                      </script>
+                      <script src="../bower_components/bootstrap/js/collapse.js">
+                      </script>
+                      <script src="../bower_components/bootstrap/js/tab.js">
+                      </script>
+                      <script src="../bower_components/wow/dist/wow.min.js">
+                      </script>  
+                        <script src="../bower_components/jquery-easing-original/jquery.easing.min.js"></script>                                            
+                      <!-- endbuild -->
+                      <!-- build:js scripts/main.js -->
+                      <script src="scripts/main.js">
+                      </script>
+                      <!-- endbuild -->
 
-
-
-
-
-
-
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:js scripts/plugins.js -->
-  <script src="../bower_components/bootstrap/js/affix.js"></script>
-  <script src="../bower_components/bootstrap/js/alert.js"></script>
-  <script src="../bower_components/bootstrap/js/dropdown.js"></script>
-  <script src="../bower_components/bootstrap/js/tooltip.js"></script>
-  <script src="../bower_components/bootstrap/js/modal.js"></script>
-  <script src="../bower_components/bootstrap/js/transition.js"></script>
-  <script src="../bower_components/bootstrap/js/button.js"></script>
-  <script src="../bower_components/bootstrap/js/popover.js"></script>
-  <script src="../bower_components/bootstrap/js/carousel.js"></script>
-  <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
-  <script src="../bower_components/bootstrap/js/collapse.js"></script>
-  <script src="../bower_components/bootstrap/js/tab.js"></script>
-  <!-- endbuild -->
-
-
-
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
-
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-  <!--      <script src="js/arcade.js"></script>-->
-  <!--      <script src="js/cbpAnimatedHeader.js"></script>-->
-  <!--      <script src="js/classie.js"></script>-->
-
-</body>
-
-</html>
-
+                       
+                        <script>
+                         new WOW().init();
+                        </script>                      
+                      
+                    </body>
+                  </html>
